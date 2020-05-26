@@ -1,0 +1,25 @@
+{
+    "name": "vscode-xle",
+    "displayName": "vscode-xle",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.45.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "xle",
+            "aliases": ["Xerox Linguistic Environment", "xle"],
+            "extensions": [".lfg"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "xle",
+            "scopeName": "source.xle",
+            "path": "./syntaxes/xle.json"
+        }]
+    }
+}
